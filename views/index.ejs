@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meetups TW</title>
+    <link rel='stylesheet' href='/stylesheets/reset.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <h1>Proximos eventos</h1>
+
+    <p>
+        <% meetups.forEach(function (item) { %>
+            <%= item.name %>
+        <% }); %>
+    </p>
+</body>
+</html>
