@@ -2,16 +2,30 @@
 <html>
 <head>
     <title>Meetups TW</title>
-    <link rel='stylesheet' href='/stylesheets/reset.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-    <h1>Proximos eventos</h1>
+    <a href="http://www.thoughtworks.com">Thoughtworks</a>
+    <img src="/images/TWTeam.png" alt="Picture of Thoughtworks team inside of some office">
+    <p>Proposal Description</p>
 
-    <p>
-        <% meetups.forEach(function (item) { %>
-            <%= item.name %>
-        <% }); %>
-    </p>
+    <ol>
+        <li>
+            <article class="">
+                <h1>Chatbot</h1>
+                <div class="">
+                    <p>Terça</p>
+                    <p>16</p>
+                    <p>19:00</p>
+                </div>
+                <ul>
+                    <li>AI</li>
+                    <li>UX</li>
+                </ul>
+                <p>Description of event.</p>
+                <button type="button">Participar desse evento</button>
+            </article>
+        </li>
+    </ol>
 </body>
 </html>
