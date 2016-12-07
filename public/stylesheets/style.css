@@ -12,8 +12,32 @@ header .logo {
     list-style: none;
 }
 
-article {
+.event {
     border: 1px solid #000;
     padding: 2em;
     margin: 3em;
+    position: relative;
+}
+.event h1 {
+    font-size: 5em;
+    font-weight: lighter;
+}
+.event .date {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    font-size: 2em;
+    color: white;
+    background-color: #009688;
+    padding: 0.5em;
+}
+.event .theme {
+    color: white;
+}
+.event .theme li {
+    display: inline-block;
+    background-color: #3498db;
+    padding: 0.5em 2em;
+    font-size: 1.5em;
+    margin: 1em 0;
 }
