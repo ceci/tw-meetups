@@ -1,4 +1,7 @@
 /* Faremos nosso CSS aqui */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 header img {
     width: 100%;
 }
