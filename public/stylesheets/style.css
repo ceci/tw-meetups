@@ -1,6 +1,7 @@
 /* Faremos nosso CSS aqui */
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
 }
 header img {
     width: 100%;
@@ -19,14 +20,14 @@ header .logo {
     position: relative;
 }
 .event h1 {
-    font-size: 5em;
+    font-size: 2.5em;
     font-weight: lighter;
 }
 .event .date {
     position: absolute;
     top: 0;
-    right: 1em;
-    font-size: 2em;
+    right: 0.5em;
+    font-size: 1.25em;
     color: white;
     background-color: #009688;
     padding: 0.5em;
@@ -37,7 +38,6 @@ header .logo {
 .event .theme li {
     display: inline-block;
     background-color: #3498db;
-    padding: 0.5em 2em;
-    font-size: 1.5em;
+    padding: 0.5em 1em;
     margin: 1em 0;
 }
