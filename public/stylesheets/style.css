@@ -1,13 +1,39 @@
 /* Faremos nosso CSS aqui */
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
 }
-header img {
-    width: 100%;
+header {
+    background-color: #F158A1;
+    text-align: center;
+    padding: 5% 8% 50%;
 }
 header .logo {
-    width: 20em;
+    width: 50%;
+    margin-top: 5%;
+}
+header h1 {
+    font-size: 3.3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+}
+header h1::before {
+    content: "";
+    border-top: 1px solid white;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+header p {
+    text-align: left;
+    color: white;
+    font-size: 1.15em;
+    margin-top: 2em;
+    line-height: 1.3em;
 }
 .events {
     list-style: none;
@@ -15,8 +41,9 @@ header .logo {
 
 .event {
     border: 1px solid #000;
+    border-radius: 6px;
     padding: 2em;
-    margin: 3em;
+    margin: 1.4em;
     position: relative;
 }
 .event h1 {
@@ -24,13 +51,13 @@ header .logo {
     font-weight: lighter;
 }
 .event .date {
-    position: absolute;
     top: 0;
-    right: 0.5em;
     font-size: 1.25em;
     color: white;
-    background-color: #009688;
+    background-color: #424242;
     padding: 0.5em;
+    display: block;
+    width: 100%;
 }
 .event .theme {
     color: white;
