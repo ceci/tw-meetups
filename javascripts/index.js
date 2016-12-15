@@ -1,6 +1,3 @@
-var express = require('express');
-var router = express.Router();
-
 let upcoming = [
     {name: 'Chatbots', date: new Date(2016, 11, 6, 19, 0), description: 'Vamos discutir como os chatbots estão mudando a forma de nos relacionarmos com nossos clientes', registerAt: 'https://www.sympla.com.br/chatbot-brasil--1-meetup__103900', targetAudience:'UX'},
     {name: 'Ladies that UX', date: new Date(2016, 11, 8, 19, 30), description: 'Meetup internacional focado em discussões de UX de e para profissionais mulheres', registerAt: '#', targetAudience: 'UX'},
@@ -8,9 +5,4 @@ let upcoming = [
     {name: 'Último evento do ano', date: new Date(2016, 11, 22, 20, 0), description: 'Esse evento reunirá pessoas de TI que estejam a fim de discutir como fazer de 2017 um ano onde usamos a tecnologia melhor', registerAt: '#', targetAudience: 'Pessoas de TI'}
 ];
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { meetups: upcoming});
-});
-
-module.exports = router;
+console.log('It ran!');
