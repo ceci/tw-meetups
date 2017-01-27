@@ -8,6 +8,7 @@ header {
     text-align: center;
     padding: 8% 8% 15em;
     top: 0;
+    height: 100%;
 }
 header .logo {
     width: 10em;
