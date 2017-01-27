@@ -6,7 +6,8 @@ body {
 header {
     background-color: #F158A1;
     text-align: center;
-    padding: 8% 8% 50%;
+    padding: 8% 8% 15em;
+    top: 0;
 }
 header .logo {
     width: 10em;
@@ -24,25 +25,28 @@ header h1::before {
     border-top: 1px solid white;
     display: block;
     margin: 0 auto;
-    width: 70%;
+    width: 30vw;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
 }
 header p {
     text-align: left;
     color: white;
-    font-size: 1.15em;
+    font-size: 1.2em;
     margin-top: 2em;
     line-height: 1.3em;
 }
+header .address {
+    font-style: italic;
+}
 .events {
     list-style: none;
+    transform: translateY(-12em);
 }
 
 .event {
     margin: 1.4em;
     position: relative;
-    transform: translateY(-12em);
 }
 .event h1 {
     font-size: 2.5em;
@@ -97,4 +101,20 @@ header p {
     font-size: 1.0em;
     color: #424242;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+}
+@media(min-width: 960px) {
+    header {
+        width: 50vw;
+        position: fixed;
+        box-sizing: border-box;
+    }
+    .events {
+        margin-left: 50vw;
+        transform: none;
+    }
+}
+@media(max-width: 460px) {
+    header h1::before {
+        width: 58vw;
+    }
 }
